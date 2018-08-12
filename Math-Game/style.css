@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Mogra|Vibur|Barrio');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+.load-scr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -25px;
+  padding: 100px;
+  z-index: 30;
+  background-color: black;
+  color: gold;
+}
+
+h1 {
+  position: absolute;
+  display: block;
+  width: 790px;
+  height: 300px;
+  top: 160px;
+  left: 330px;
+  font-family: Barrio;
+  font-size: 140px;
+  color: gold;
+  border-style: solid;
+  cursor: default;
+}
+
+h2 {
+  position: absolute;
+  font-family: Lobster;
+  color: white;
+  font-size: 70px;
+  top: 510px;
+  left: 520px;
+  cursor: pointer;
+}
+
+h2:hover {
+  font-size: 75px;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  background-image: url();
+  background-repeat: no-repeat;
+}
+
+#container {
+  width: 900px;
+  height: 680px;
+  background-image: url(bg3.jpg);
+  background-repeat: no-repeat;
+  background-color: #9DD2EA;
+  font-family: 'Gochi Hand', cursive;
+  border-radius: 30px;
+  left: 100px;
+  top: 40px;
+  position: absolute;
+}
+
+#question-number {
+  color: #030202;
+  position: absolute;
+  height: 100px;
+  top: 30px;
+  left: 320px;
+  width: 500px;
+  font-size: 40px;
+}
+
+#answer {
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  left: 550px;
+  top: 250px;
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid #edce5e;
+  border-radius: 20px;
+  background-image: url(button.jpg);
+  display: none;
+}
+
+#correct {
+  position: absolute;
+  color: #7cd2a6;
+  font-size: 65px;
+  left: 540px;
+  top: 360px;
+  transform: rotate(-15deg);
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  left: 450px;
+  top: 360px;
+  color: #de481a;
+  font-size: 65px;
+  transform: rotate(-10deg);
+  display: none;
+}
+
+#question {
+  width: 200px;
+  height: 200px;
+  margin-left: 350px;
+  margin-top: 40px;
+  line-height: 150px;
+  /* font-size: 7rem; */
+  /* border: 1px solid; */
+}
+
+#instruction {
+  width: 550px;
+  height: 50px;
+  color: #030202;
+  margin-top: 150px;
+  margin-left: 280px;
+  line-height: 45px;
+  /* border: 1px solid; */
+  font-size: 40px;
+}
+
+#choices {
+  width: 550px;
+  height: 100px;
+  margin-left: 270px;
+  margin-top: 30px;
+}
+
+.box {
+  width: 110px;
+  height: 50px;
+  background-color: #f7f7f7;
+  float: left;
+  margin-right: 10px;
+  border: 3px solid #edce5e;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  background-image: url(button.jpg);
+  font-size: 30px;
+}
+
+.box:hover {
+  width: 120px;
+  height: 55px;
+}
+
+#box4 {
+  margin-right: 0;
+}
+
+#start-reset, #generate, #sound {
+  color: #030202;
+  border: 3px solid #edce5e;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  left: 896px;
+  top: 480px;
+  width: 200px;
+  height: 50px;
+  font-size: 40px;
+  background-image: url(button.jpg);
+  cursor: pointer;
+}
+
+#start-reset:hover, #generate:hover {
+  width: 210px;
+  height: 55px;
+}
+
+#generate {
+  top: 400px;
+}
+
+#sound {
+  top: 560px;
+  width: 60px;
+}
+
+#sound:hover {
+  width: 65px;
+  height: 55px;
+}
+
+#face {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 930px;
+  top: 100px;
+  animation: 1s boyface infinite;
+}
+
+@keyframes boyface {
+  50% {
+    transform: rotate(10deg)
+  }
+  ;
+  100% {
+    transform: rotate(-50deg)
+  }
+  ;
+}
+
+#game-over {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  left: 300px;
+  top: 300px;
+  text-align: center;
+  font-size: 40px;
+  border: 3px solid #edce5e;
+  border-radius: 20px;
+  background-image: url(button.jpg);
+  transform: rotate(-5deg);
+  display: none;
+}
